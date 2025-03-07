@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HO4_Sesgundo_app_Revised",
-    "slug": "HO4_Sesgundo_app_Revised",
+    "name": "HO4_Sesgundo_app",
+    "slug": "HO4_Sesgundo_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,7 +16,7 @@
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "mpop.revii.sanaolsantol"
+      "package": "mpop.reverse.ii.HO4"
     },
     "web": {
       "bundler": "metro",
@@ -31,7 +31,7 @@
           "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#121230"
+          "backgroundColor": "#131320"
         }
       ]
     ],
@@ -43,7 +43,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "85098d3c-5a78-4f45-a720-63694131658e"
+        "projectId": "d964dd9e-1da6-40ec-884b-ebca1e257598"
       }
     }
   }
