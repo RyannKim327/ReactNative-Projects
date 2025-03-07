@@ -2,7 +2,7 @@
   "expo": {
     "name": "HO4_Sesgundo_app",
     "slug": "HO4_Sesgundo_app",
-    "version": "1.0.0",
+    "version": "0.0.1-Beta",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -14,7 +14,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#131320"
       },
       "package": "mpop.reverse.ii.HO4"
     },
@@ -43,7 +43,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "d964dd9e-1da6-40ec-884b-ebca1e257598"
+        "projectId": "f7ca9806-132e-4a3d-87e8-b3be611fa0a3"
       }
     }
   }

@@ -5,7 +5,7 @@ const Header = () => {
     <View style={style.header}>
       <View style={style.inner}>
         <Image
-          source={require("@/assets/images/profile.png")}
+          source={require("@/assets/images/profile.jpg")}
           style={style.profile}
         />
         <View>
