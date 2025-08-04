@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
 		backgroundColor: "#1976d2",
 		padding: 10,
 		color: "white",
-		width: "100%",
 		borderRadius: 5,
 		alignItems: "center",
 		textAlign: "center",
+		width: "100%",
 	},
 	label: {
 		color: "white",
@@ -36,9 +36,10 @@ export default function Button(props: ButtonProps) {
 		<View
 			style={{
 				display: "flex",
-				width: "100%",
+				flexDirection: "row",
 				paddingHorizontal: 10,
 				paddingVertical: 5,
+				flexShrink: 1,
 			}}
 		>
 			<TouchableOpacity

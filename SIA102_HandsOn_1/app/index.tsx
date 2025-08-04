@@ -17,14 +17,25 @@ export default function Index() {
       <Input label="First name" hint="Enter your first name" />
       <Input label="Middle name" />
       <Input label="Last name" />
-      <Button
-        onClick={() => {
-          setL(true);
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          alignItems: "center",
         }}
-        loading={l}
       >
-        Click me to subscribe
-      </Button>
+        <Button
+          onClick={() => {
+            setL(true);
+          }}
+          loading={l}
+        >
+          Click me to subscribe
+        </Button>
+        <Button onClick={() => { }}>Cancel</Button>
+      </View>
+      <Button onClick={() => { }}>Test</Button>
     </View>
   );
 }
