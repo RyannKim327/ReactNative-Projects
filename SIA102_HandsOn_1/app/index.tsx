@@ -14,9 +14,9 @@ export default function Index() {
       }}
     >
       <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Input label="First name" hint="Enter your first name" />
-      <Input label="Middle name" />
-      <Input label="Last name" />
+      <Input label="Current Score" />
+      <Input label="Total Score" />
+      <Input label="Fullname" />
       <View
         style={{
           display: "flex",
