@@ -2,6 +2,7 @@ import { Text, View } from "react-native";
 import Input from "./widgets/input";
 import Button from "./widgets/button";
 import { useState } from "react";
+import Card from "./components/card";
 
 export default function Index() {
   const [l, setL] = useState(false);
@@ -13,29 +14,38 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Input label="Current Score" />
-      <Input label="Total Score" />
-      <Input label="Fullname" />
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "100%",
-          alignItems: "center",
-        }}
-      >
-        <Button
-          onClick={() => {
-            setL(true);
+      <Card>
+        <Text>SIA HandsOn #1</Text>
+        <Input label="Quiz Items" />
+        <Input label="Quiz Score" />
+        <Input label="Full name" />
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            width: "100%",
+            alignItems: "center",
           }}
-          loading={l}
         >
-          Click me to subscribe
-        </Button>
-        <Button onClick={() => { }}>Cancel</Button>
-      </View>
-      <Button onClick={() => { }}>Test</Button>
+          <Button
+            onClick={() => {
+              setL(true);
+            }}
+            loading={l}
+          >
+            Submit
+          </Button>
+          <Button
+            style={{
+              backgroundColor: "red",
+            }}
+            clickable={l}
+            onClick={() => {}}
+          >
+            Cancel
+          </Button>
+        </View>
+      </Card>
     </View>
   );
 }
