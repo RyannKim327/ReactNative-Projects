@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     width: "90%",
     boxShadow: "3px 3px 8px #aaaaaa",
+    backgroundColor: "#eff7ffff",
     margin: 5,
     padding: 15,
     borderRadius: 8,

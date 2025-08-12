@@ -9,6 +9,7 @@ interface InputProps {
   multiline?: boolean;
   maxLines?: number;
   value?: string;
+  disabled?: boolean
 }
 
 const styles = StyleSheet.create({
@@ -55,6 +56,7 @@ export default function Input(props: InputProps) {
         onBlur={() => {
           setFocus(false);
         }}
+        editable={!props.disabled}
         style={[
           styles.input,
           {

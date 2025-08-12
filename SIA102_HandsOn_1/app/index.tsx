@@ -1,11 +1,19 @@
-import { Text, View } from "react-native";
-import Input from "./widgets/input";
-import Button from "./widgets/button";
 import { useState } from "react";
+import { Text, View } from "react-native";
 import Card from "./components/card";
+import Button from "./widgets/button";
+import Input from "./widgets/input";
 
 export default function Index() {
   const [l, setL] = useState(false);
+
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [section, setSection] = useState("")
+  const [status, setStatus] = useState("")
+  const [message, setMessage] = useState("")
+  const [retruieveUsers, setRetruieveUsers] = useState([])
+
   return (
     <View
       style={{
@@ -15,10 +23,14 @@ export default function Index() {
       }}
     >
       <Card>
-        <Text>SIA HandsOn #1</Text>
-        <Input label="Quiz Items" />
-        <Input label="Quiz Score" />
-        <Input label="Full name" />
+        <Text style={{
+          fontWeight: "bold",
+          fontSize: 25,
+          fontFamily: "serif"
+        }}>SIA HandsOn #1</Text>
+        <Input label="First name" disabled={l} />
+        <Input label="Last name" disabled={l} />
+        <Input label="Section" disabled={l} />
         <View
           style={{
             display: "flex",
@@ -33,7 +45,7 @@ export default function Index() {
             }}
             loading={l}
           >
-            Submit
+            Present
           </Button>
           <Button
             style={{
@@ -42,7 +54,7 @@ export default function Index() {
             clickable={l}
             onClick={() => {}}
           >
-            Cancel
+            Absent
           </Button>
         </View>
       </Card>
